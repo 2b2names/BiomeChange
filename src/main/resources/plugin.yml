@@ -1,5 +1,12 @@
 name: BiomeChange
-version: '1.0'
+version: 1.0
 main: me.tiger.biomeChange.BiomeChange
-api-version: '1.21'
-authors: [ 2b2t_names ]
+api-version: "1.21"
+commands:
+  biomechange:
+    description: Enable/disable biome switching
+    usage: /biomechange <enable|disable>
+    permission: biomechange.use
+permissions:
+  biomechange.use:
+    default: op
